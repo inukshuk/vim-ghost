@@ -55,11 +55,11 @@ syn keyword javaScriptType		Array Boolean Date Function Number Object String Reg
 syn keyword javaScriptStatement		return with yield
 syn keyword javaScriptBoolean		true false
 syn keyword javaScriptNull		null undefined
-syn keyword javaScriptIdentifier	this var let
+syn keyword javaScriptIdentifier	this var let self
 syn keyword javaScriptLabel		case default
 syn keyword javaScriptException		try catch finally throw
 syn keyword javaScriptMessage		alert confirm prompt status
-syn keyword javaScriptGlobal		self window top parent
+syn keyword javaScriptGlobal		window top parent parseInt parseFloat setTimeout cancelTimeout setInterval cancelInterval
 syn keyword javaScriptMember		document event location
 syn keyword javaScriptDeprecated	escape unescape
 syn keyword javaScriptReserved		abstract boolean byte char class const debugger double enum export extends final float goto implements import int interface long native package private protected public short static super synchronized throws transient volatile
@@ -123,7 +123,7 @@ if version >= 508 || !exists("did_javascript_syn_inits")
   HiLink javaScriptLabel		Label
   HiLink javaScriptException		Exception
   HiLink javaScriptMessage		Keyword
-  HiLink javaScriptGlobal		Keyword
+  HiLink javaScriptGlobal		Type
   HiLink javaScriptMember		Keyword
   HiLink javaScriptDeprecated		Exception
   HiLink javaScriptReserved		Keyword
